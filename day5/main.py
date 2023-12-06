@@ -9,7 +9,7 @@ def create_mappings(seeds_map: list):
 
     mappings = {}
     temp_max = 0
-    for key, values in seeds_map:
+    for key, values in result.items():
         mapping = {}
         for line in values:
             if line:
