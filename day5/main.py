@@ -52,7 +52,7 @@ with open("input.txt") as f:
         if line.endswith(':'):
             current_label = line[:-5]  # Remove ' map:'
             seeds_map.append({current_label: []})
-        elif current_label and len(line) > 0:
+        elif current_label and line:
             seeds_map[-1][current_label].append(line.split(' '))
 
     converted_seeds = []
