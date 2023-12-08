@@ -1,6 +1,3 @@
-from operator import ne
-
-
 def check_if_next_step_is_ZZZ(next_step, instructions, directions, r = 0):
     r += 1
     print('RESET .....', r, next_step)
@@ -16,6 +13,7 @@ def check_if_next_step_is_ZZZ(next_step, instructions, directions, r = 0):
         next_step = (instructions[0].split(' ='))[0]
         check_if_next_step_is_ZZZ(next_step, instructions, directions, r)
     
+    print(steps)
     return steps
 
 
